@@ -20,14 +20,17 @@ def index():
 @bp.route('/query/', methods=["GET"])
 def query():
     question_id = request.args.get('q_id')
+    param_0 = request.args.get('param0')
+    param_1 = request.args.get('param1')
+    param_2 = request.args.get('param2')
     print(question_id)
     sparql_endpoint = 'http://127.0.0.1:3030/kde/query'
     sparql = SPARQLWrapper(sparql_endpoint)
-    query = getattr(sys.modules[__name__], "generate_q%s_query" % question_id)()
+    query = getattr(sys.modules[__name__], "generate_q%s_query" % question_id)(param_0, param_1, param_2)
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
     response = sparql.query().convert()
 
     labels = response['head']['vars']
     data = response['results']['bindings']
-    return render_template('index.html', data=data, labels=labels)
+    return render_template('index.html', data=data, labels=labels, active_query=question_id)

@@ -7,15 +7,15 @@
       <div class="card">
         <div class="card-header" id="headingOne">
           <h2 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Number of nobel laureate per country
+            <button class="btn btn-link {{ 'collapsed' if active_query != 1 }}" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="{{ 'true' if active_query == 1 else 'false' }}" aria-controls="collapseOne">
+              1. Number of nobel laureate per country
             </button>
           </h2>
         </div>
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body" style="text-align: center">
             <div class="card-body" style="text-align: center">
-                <div class="card-body" style="text-align: center">
-                <a href="/query/?q_id=1"><button type="button" class="btn btn-info">Query</button></a>
+              <a href="/query/?q_id=1"><button type="button" class="btn btn-info">Query</button></a>
             </div>
           </div>
         </div>
@@ -24,15 +24,15 @@
       <div class="card">
         <div class="card-header" id="headingTwo">
           <h2 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Research Rating of a university which has nobel laureates affiliated to it in the year 2016
+            <button class="btn btn-link {{ 'collapsed' if active_query != 2 }}" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="{{ 'true' if active_query == 2 else 'false' }}" aria-controls="collapseTwo">
+              2. University ranking to which a nobel laureate is affiliated to in 2016
             </button>
           </h2>
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
           <div class="card-body">
             <div class="card-body" style="text-align: center">
-                <a href="/query/?q_id=2"><button type="button" class="btn btn-info">Query</button></a>
+              <a href="/query/?q_id=2"><button type="button" class="btn btn-info">Query</button></a>
             </div>
           </div>
         </div>
@@ -41,15 +41,141 @@
       <div class="card">
         <div class="card-header" id="headingThree">
           <h2 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              University ranking to which a nobel laureate is affiliated to in 2016
+            <button class="btn btn-link {{ 'collapsed' if active_query != 3 }}" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="{{ active_query == 3 }}" aria-controls="collapseThree">
+              3. Statistic of country for top n universities in the world in 2016
             </button>
           </h2>
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
           <div class="card-body">
             <div class="card-body" style="text-align: center">
-                <a href="/query/?q_id=3"><button type="button" class="btn btn-info">Query</button></a>
+              <a href="/query/?q_id=3"><button type="button" class="btn btn-info">Query</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button class="btn btn-link {{ 'collapsed' if active_query != 4 }}" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              4. Number of nobel prize winning papers for a country
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="card-body" style="text-align: center">
+              <a href="/query/?q_id=4"><button type="button" class="btn btn-info">Query</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h2 class="mb-0">
+            <button class="btn btn-link {{ 'collapsed' if active_query != 5 }}" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              5. Ratio of enrollment to primary vs students in university in 2016 for a country
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="card-body" style="text-align: center">
+              <a href="/query/?q_id=5"><button type="button" class="btn btn-info">Query</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h2 class="mb-0">
+            <button class="btn btn-link {{ 'collapsed' if active_query != 6 }}" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="{{ 'true' if active_query == 6 else 'false' }}" aria-controls="collapseSix">
+              6. Research Rating of a university which has a nobel laureates affiliated to it, in year 2016
+            </button>
+          </h2>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="card-body" style="text-align: center">
+              <a href="/query/?q_id=6"><button type="button" class="btn btn-info">Query</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingSeven">
+          <h2 class="mb-0">
+            <button class="btn btn-link {{ 'collapsed' if active_query != 7 }}" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              7. Country of a Nobel laureate
+            </button>
+          </h2>
+        </div>
+        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="card-body" style="text-align: center">
+              <a href="/query/?q_id=7"><button type="button" class="btn btn-info">Query</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingEight">
+          <h2 class="mb-0">
+            <button class="btn btn-link {{ 'collapsed' if active_query != 8 }}" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              8. GDP & Gold Medals of a country in the year 2000
+            </button>
+          </h2>
+        </div>
+        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="card-body" style="text-align: center">
+              <a href="/query/?q_id=8"><button type="button" class="btn btn-info">Query</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingNine">
+          <h2 class="mb-0">
+            <button class="btn btn-link {{ 'collapsed' if active_query != 9 }}" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              9. Total number of Gold medals won by a country in the toughest sport
+            </button>
+          </h2>
+        </div>
+        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="card-body" style="text-align: center">
+              <form action="/query" method="get">
+                <input type="hidden" name="q_id" value=9>
+                <select name='param0'>
+                  <option selected>Country</option>
+                  <option value="Russia">Russia</option>
+                </select>
+                <button type="submit" class="btn btn-info">Query</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingTen">
+          <h2 class="mb-0">
+            <button class="btn btn-link {{ 'collapsed' if active_query != 10 }}" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              10. Male Female ratio of olympic winners in toughest sport between 2000-2008
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="card-body" style="text-align: center">
+              <a href="/query/?q_id=10"><button type="button" class="btn btn-info">Query</button></a>
             </div>
           </div>
         </div>
