@@ -8,15 +8,22 @@
         <div class="card-header" id="headingOne">
           <h2 class="mb-0">
             <button class="btn btn-link {{ 'collapsed' if active_query != 1 }}" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="{{ 'true' if active_query == 1 else 'false' }}" aria-controls="collapseOne">
-              1. Number of nobel laureate per country
+              1. Get names of Nobel laureates for given country
             </button>
           </h2>
         </div>
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="card-body" style="text-align: center">
-            <div class="card-body" style="text-align: center">
-              <a href="/query/?q_id=1"><button type="button" class="btn btn-info">Query</button></a>
-            </div>
+          <div class="card-body">
+            <form action="/query" method="get">
+              <input type="hidden" name="q_id" value=1>
+              <select name='param0'>
+                <option selected>Country</option>
+                <option value="United States of America">United States of America</option>
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+              </select>
+              <button type="submit" class="btn btn-info">Query</button>
+            </form>
           </div>
         </div>
       </div>
@@ -31,9 +38,17 @@
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
           <div class="card-body">
-            <div class="card-body" style="text-align: center">
-              <a href="/query/?q_id=2"><button type="button" class="btn btn-info">Query</button></a>
-            </div>
+            <form action="/query" method="get">
+              <input type="hidden" name="q_id" value=2>
+              <select name='param0'>
+                <option selected>Country</option>
+                <option value="lamb, we">Lamb, WE</option>
+                <option value="schawlow, al">Schawlow, AL</option>
+                <option value="laughlin, rb">Laughlin, RB</option>
+                <option value="raman, cv">Raman, CV</option>
+              </select>
+              <button type="submit" class="btn btn-info">Query</button>
+            </form>
           </div>
         </div>
       </div>
@@ -42,15 +57,22 @@
         <div class="card-header" id="headingThree">
           <h2 class="mb-0">
             <button class="btn btn-link {{ 'collapsed' if active_query != 3 }}" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="{{ active_query == 3 }}" aria-controls="collapseThree">
-              3. Statistic of country for top n universities in the world in 2016
+              3. Titles of nobel prize winning papers for a country
             </button>
           </h2>
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
           <div class="card-body">
-            <div class="card-body" style="text-align: center">
-              <a href="/query/?q_id=3"><button type="button" class="btn btn-info">Query</button></a>
-            </div>
+            <form action="/query" method="get">
+              <input type="hidden" name="q_id" value=3>
+              <select name='param0'>
+                <option selected>Country</option>
+                <option value="United States of America">United States of America</option>
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+              </select>
+              <button type="submit" class="btn btn-info">Query</button>
+            </form>
           </div>
         </div>
       </div>
@@ -65,9 +87,17 @@
         </div>
         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
           <div class="card-body">
-            <div class="card-body" style="text-align: center">
-              <a href="/query/?q_id=4"><button type="button" class="btn btn-info">Query</button></a>
-            </div>
+            <form action="/query" method="get">
+              <input type="hidden" name="q_id" value=4>
+              <select name='param0'>
+                <option selected>Country</option>
+                <option value="Australia">Australia</option>
+                <option value="UK">UK</option>
+                <option value="India">India</option>
+                <option value="Ireland">Ireland</option>
+              </select>
+              <button type="submit" class="btn btn-info">Query</button>
+            </form>
           </div>
         </div>
       </div>
@@ -76,15 +106,20 @@
         <div class="card-header" id="headingFive">
           <h2 class="mb-0">
             <button class="btn btn-link {{ 'collapsed' if active_query != 5 }}" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              5. Ratio of enrollment to primary vs students in university in 2016 for a country
+              5. Research rating of a university which has a Nobel laureates affiliated to it, in year 2016
             </button>
           </h2>
         </div>
         <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
           <div class="card-body">
-            <div class="card-body" style="text-align: center">
-              <a href="/query/?q_id=5"><button type="button" class="btn btn-info">Query</button></a>
-            </div>
+            <form action="/query" method="get">
+              <input type="hidden" name="q_id" value=5>
+              <select name='param0'>
+                <option selected>Laureate Name</option>
+                <option value="lamb, we">Lamb, WE</option>
+              </select>
+              <button type="submit" class="btn btn-info">Query</button>
+            </form>
           </div>
         </div>
       </div>
@@ -93,15 +128,20 @@
         <div class="card-header" id="headingSix">
           <h2 class="mb-0">
             <button class="btn btn-link {{ 'collapsed' if active_query != 6 }}" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="{{ 'true' if active_query == 6 else 'false' }}" aria-controls="collapseSix">
-              6. Research Rating of a university which has a nobel laureates affiliated to it, in year 2016
+              6. Identifying relation between a country’s GDP and total number of Gold Medals won by that country in Olympics in the specified year.
             </button>
           </h2>
         </div>
         <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
           <div class="card-body">
-            <div class="card-body" style="text-align: center">
-              <a href="/query/?q_id=6"><button type="button" class="btn btn-info">Query</button></a>
-            </div>
+            <form action="/query" method="get">
+              <input type="hidden" name="q_id" value=6>
+              <select name='param0'>
+                <option selected>Year</option>
+                <option value="2004">2004</option>
+              </select>
+              <button type="submit" class="btn btn-info">Query</button>
+            </form>
           </div>
         </div>
       </div>
@@ -110,15 +150,22 @@
         <div class="card-header" id="headingSeven">
           <h2 class="mb-0">
             <button class="btn btn-link {{ 'collapsed' if active_query != 7 }}" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-              7. Country of a Nobel laureate
+              7. Total number of medals won by a country in the toughest sport.
             </button>
           </h2>
         </div>
         <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
           <div class="card-body">
-            <div class="card-body" style="text-align: center">
-              <a href="/query/?q_id=7"><button type="button" class="btn btn-info">Query</button></a>
-            </div>
+            <form action="/query" method="get">
+              <input type="hidden" name="q_id" value=7>
+              <select name='param0'>
+                <option selected>Medal</option>
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+                <option value="Bronze">Bronze</option>
+              </select>
+              <button type="submit" class="btn btn-info">Query</button>
+            </form>
           </div>
         </div>
       </div>
@@ -127,15 +174,24 @@
         <div class="card-header" id="headingEight">
           <h2 class="mb-0">
             <button class="btn btn-link {{ 'collapsed' if active_query != 8 }}" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-              8. GDP & Gold Medals of a country in the year 2000
+              8. Male female ratio of Olympic winners based on specified level of difficulty of the sport. (1 Being the toughest sport)
             </button>
           </h2>
         </div>
         <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
           <div class="card-body">
-            <div class="card-body" style="text-align: center">
-              <a href="/query/?q_id=8"><button type="button" class="btn btn-info">Query</button></a>
-            </div>
+            <form action="/query" method="get">
+              <input type="hidden" name="q_id" value=8>
+              <select name='param0'>
+                <option selected>Year</option>
+                <option value="2004">2004</option>
+              </select>
+              <select name='param1'>
+                <option selected>Level of difficulty</option>
+                <option value="3">3</option>
+              </select>
+              <button type="submit" class="btn btn-info">Query</button>
+            </form>
           </div>
         </div>
       </div>
@@ -144,22 +200,28 @@
         <div class="card-header" id="headingNine">
           <h2 class="mb-0">
             <button class="btn btn-link {{ 'collapsed' if active_query != 9 }}" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-              9. Total number of Gold medals won by a country in the toughest sport
+              9. What is the total number of Olympics medals won by a country in a given year?
             </button>
           </h2>
         </div>
         <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
           <div class="card-body">
-            <div class="card-body" style="text-align: center">
-              <form action="/query" method="get">
-                <input type="hidden" name="q_id" value=9>
-                <select name='param0'>
-                  <option selected>Country</option>
-                  <option value="Russia">Russia</option>
-                </select>
-                <button type="submit" class="btn btn-info">Query</button>
-              </form>
-            </div>
+            <form action="/query" method="get">
+              <input type="hidden" name="q_id" value=9>
+              <select name='param0'>
+                <option selected>Medal</option>
+                <option value="Gold">Gold</option>
+              </select>
+              <select name='param1'>
+                <option selected>Country</option>
+                <option value="Russia">Russia</option>
+              </select>
+              <select name='param2'>
+                <option selected>Year</option>
+                <option value="2004">2004</option>
+              </select>
+              <button type="submit" class="btn btn-info">Query</button>
+            </form>
           </div>
         </div>
       </div>
@@ -168,15 +230,13 @@
         <div class="card-header" id="headingTen">
           <h2 class="mb-0">
             <button class="btn btn-link {{ 'collapsed' if active_query != 10 }}" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-              10. Male Female ratio of olympic winners in toughest sport between 2000-2008
+              10. Comparison between the research rating and the total number of nobel laureates of top 20 universities in the world.
             </button>
           </h2>
         </div>
         <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
           <div class="card-body">
-            <div class="card-body" style="text-align: center">
-              <a href="/query/?q_id=10"><button type="button" class="btn btn-info">Query</button></a>
-            </div>
+            <a href="/query/?q_id=10"><button type="button" class="btn btn-info">Query</button></a>
           </div>
         </div>
       </div>
@@ -184,7 +244,7 @@
   </div>
 
   <div class="col-md-5">
-    <table class="table table-striped" style="font-family: Georgia" bgcolor="#ABB2B9">
+    <table class="table table-striped" bgcolor="#ABB2B9">
       <thead>
         <tr bgcolor="#17202A" style="font-family: Georgia;color: white">
           {% for label in labels %}
