@@ -138,7 +138,7 @@ def generate_q6_query(param_0, param_1, param_2):
         PREFIX exont: <http://example.org/ontology/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
 
-        SELECT (?countryName AS ?COUNTRY) (count(?athlete) AS ?GOLD_MDALS) (?gdp AS ?Gross_Domestic_Product)
+        SELECT (?countryName AS ?COUNTRY) (count(?athlete) AS ?GOLD_MDALS) (?gdp AS ?Gross_Domestic_Product_USD)
 
         WHERE
         {

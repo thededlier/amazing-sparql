@@ -3,6 +3,7 @@ import requests
 from .query_set import *
 from SPARQLWrapper import SPARQLWrapper, JSON
 import sys
+import json
 
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
@@ -33,4 +34,13 @@ def query():
 
     labels = response['head']['vars']
     data = response['results']['bindings']
-    return render_template('index.html', data=data, labels=labels, active_query=question_id)
+
+    chart_labels = list()
+    chart_data = list()
+
+    if question_id == '10':
+        for row in data:
+            chart_labels.append(row['UNIVERSITY_NAME']['value'])
+            chart_data.append(int(row['NOBEL_LAUREATE_COUNT']['value']))
+
+    return render_template('index.html', data=data, labels=labels, active_query=question_id, chart_labels=chart_labels, chart_data=chart_data)
