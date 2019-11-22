@@ -288,7 +288,7 @@
   var myBarChart = new Chart(document.getElementById('chart-1'), {
     type: 'bar',
     data: {
-      labels: {{chart_labels | tojson}},
+      labels: {{chart_labels if chart_labels != None else {} | tojson }},
       datasets: [{
         label: 'Number of nobel laureates by top universities',
         data: {{chart_data}}
