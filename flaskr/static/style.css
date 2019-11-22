@@ -1,0 +1,6 @@
+.query-result {
+  position: absolute;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}

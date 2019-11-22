@@ -28,8 +28,6 @@ def generate_q2_query(param_0, param_1, param_2):
         PREFIX foaf: <http://xmlns.com/foaf/0.1/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
         PREFIX exont: <http://example.org/ontology/>
-        PREFIX ex: <http://example.org/>
-        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
         select (UCASE(?laureateUniversityName) AS ?UNIVERSITY_NAME) (?universityRank AS ?WORLD_RANKING)
 
@@ -188,26 +186,31 @@ def generate_q7_query(param_0, param_1, param_2):
 
     return query
 
-# 8. Male female ratio of Olympic winners based on specified level of difficulty of the sport. (1 Being the toughest sport)
-# INPUT: Year and Level of difficulty
+# 8. Comparison between the research rating and the total number of nobel laureates of top 20 universities in the world.
+# No input but graph
 def generate_q8_query(param_0, param_1, param_2):
     query = """
         PREFIX exont: <http://example.org/ontology/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
 
-        SELECT (COUNT(?athlete) AS ?NUMBER_OF_WINNERS) (?sex AS ?GENDER) (?toughSportName AS ?SPORTS_DISCIPLINE)
+        SELECT  (?universityName AS ?UNIVERSITY_NAME)  (?universityWorldRank AS ?WORLD_RANK) (?researchRating AS ?RESEARCH_RATING) (COUNT(?laureate) AS ?NOBEL_LAUREATE_COUNT) (?countryName AS ?COUNTRY)
 
         WHERE {
+        	?university exont:hasRank ?universityRankObj.
+        	?universityRankObj exont:worldRank ?universityWorldRank.
+            FILTER (?universityWorldRank < 21).
+            ?universityRankObj exont:definedBy ?universityRankParamObj.
+            ?universityRankParamObj exont:researchRating ?researchRating.
+        	?university exont:universityName ?universityName.
 
-          ?toughSport exont:difficultyLevel %s.
-          ?toughSport dbo:name ?toughSportName.
-          ?olympicEvent exont:hasSportDiscipline ?toughSportName.
-          ?olympicEvent exont:yearOfEvent %s.
-          ?athlete exont:participatedIn ?olympicEvent.
-          ?athlete dbo:sex ?sex.
+            ?laureate exont:affiliatedToUniversity ?laureateUniversityObj.
+            ?laureateUniversityObj exont:universityName ?laureateUniversityName.
+            FILTER ( regex (str(?universityName), str(?laureateUniversityName), "i") ).
 
-        } GROUP BY ?sex ?toughSportName
-    """ % (param_1, param_0)
+            ?university exont:situatedIn ?countryObj.
+            ?countryObj dbo:name ?countryName.
+        } GROUP BY ?universityName ?universityWorldRank ?researchRating ?countryName ORDER BY (?universityWorldRank)
+    """
 
     return query
 
@@ -236,32 +239,25 @@ def generate_q9_query(param_0, param_1, param_2):
     """ % (param_0, param_2, param_1)
     return query
 
-# 10. Comparison between the research rating and the total number of nobel laureates of top 20 universities in the world.
-# No input but graph
+# 10. Male female ratio of Olympic winners based on specified level of difficulty of the sport. (1 Being the toughest sport)
+# INPUT: Year and Level of difficulty
 def generate_q10_query(param_0, param_1, param_2):
     query = """
         PREFIX exont: <http://example.org/ontology/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
 
-        SELECT  (?universityName AS ?UNIVERSITY_NAME)  (?universityWorldRank AS ?WORLD_RANK) (?researchRating AS ?RESEARCH_RATING) (COUNT(?laureate) AS ?NOBEL_LAUREATE_COUNT) (?countryName AS ?COUNTRY)
+        SELECT (COUNT(?athlete) AS ?NUMBER_OF_WINNERS) (?sex AS ?GENDER) (?toughSportName AS ?SPORTS_DISCIPLINE)
 
         WHERE {
-        	?university exont:hasRank ?universityRankObj.
-        	?universityRankObj exont:worldRank ?universityWorldRank.
-        							FILTER (?universityWorldRank < 21).
-          ?universityRankObj exont:definedBy ?universityRankParamObj.
-          ?universityRankParamObj exont:researchRating ?researchRating.
-        	?university exont:universityName ?universityName.
 
-          ?laureate exont:affiliatedToUniversity ?laureateUniversityObj.
-          ?laureateUniversityObj exont:universityName ?laureateUniversityName.
-          FILTER ( regex (str(?universityName), str(?laureateUniversityName), "i") ).
+          ?toughSport exont:difficultyLevel %s.
+          ?toughSport dbo:name ?toughSportName.
+          ?olympicEvent exont:hasSportDiscipline ?toughSportName.
+          ?olympicEvent exont:yearOfEvent %s.
+          ?athlete exont:participatedIn ?olympicEvent.
+          ?athlete dbo:sex ?sex.
 
-          ?university exont:situatedIn ?countryObj.
-          ?countryObj dbo:name ?countryName.
-
-
-        } GROUP BY ?universityName ?universityWorldRank ?researchRating ?countryName ORDER BY (?universityWorldRank)
-    """
+        } GROUP BY ?sex ?toughSportName
+    """ % (param_1, param_0)
 
     return query

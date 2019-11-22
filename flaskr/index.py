@@ -38,9 +38,9 @@ def query():
     chart_labels = list()
     chart_data = list()
 
-    if question_id == '10':
+    if question_id == '8':
         for row in data:
             chart_labels.append(row['UNIVERSITY_NAME']['value'])
             chart_data.append(int(row['NOBEL_LAUREATE_COUNT']['value']))
 
-    return render_template('index.html', data=data, labels=labels, active_query=question_id, chart_labels=chart_labels, chart_data=chart_data)
+    return render_template('index.html', data=data, labels=labels, active_query=int(question_id), chart_labels=chart_labels, chart_data=chart_data, query=query)
