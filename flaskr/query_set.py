@@ -4,9 +4,7 @@ def generate_q1_query(param_0, param_1, param_2):
     query = """
         PREFIX foaf: <http://xmlns.com/foaf/0.1/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
-        PREFIX exont: <http://example.org/ontology/>
-        PREFIX ex: <http://example.org/>
-        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        PREFIX exont: <http://countrystats.org/ontology/>
 
         SELECT (UCASE(?laureateUniversityName) AS ?UNIVERSITY) (UCASE(?laureateName) AS ?LAUREATE_NAME)
         WHERE {
@@ -27,7 +25,7 @@ def generate_q2_query(param_0, param_1, param_2):
     query = """
         PREFIX foaf: <http://xmlns.com/foaf/0.1/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
-        PREFIX exont: <http://example.org/ontology/>
+        PREFIX exont: <http://countrystats.org/ontology/>
 
         select (UCASE(?laureateUniversityName) AS ?UNIVERSITY_NAME) (?universityRank AS ?WORLD_RANKING)
 
@@ -51,7 +49,7 @@ def generate_q2_query(param_0, param_1, param_2):
 def generate_q3_query(param_0, param_1, param_2):
     query = """
         PREFIX dbo: <http://dbpedia.org/ontology/>
-        PREFIX exont: <http://example.org/ontology/>
+        PREFIX exont: <http://countrystats.org/ontology/>
 
         SELECT (UCASE(?laureateUnivName) AS ?UNIVERSITY_NAME) (UCASE(?researchPaperTitle) AS ?PAPER_TITLE)
         WHERE {
@@ -73,7 +71,7 @@ def generate_q3_query(param_0, param_1, param_2):
 def generate_q4_query(param_0, param_1, param_2):
     query = """
         PREFIX dbo: <http://dbpedia.org/ontology/>
-        PREFIX exont: <http://example.org/ontology/>
+        PREFIX exont: <http://countrystats.org/ontology/>
 
         SELECT (?universityname AS ?UNIVERSITY_NAME) (?numberOfStudents AS ?TOTAL_NO_OF_STUDENTS) (?populationCount AS ?TOTAL_POPULATION)
 
@@ -105,7 +103,7 @@ def generate_q4_query(param_0, param_1, param_2):
 # INPUT: Laureate names
 def generate_q5_query(param_0, param_1, param_2):
     query = """
-        PREFIX exont: <http://example.org/ontology/>
+        PREFIX exont: <http://countrystats.org/ontology/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
         PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
@@ -133,7 +131,7 @@ def generate_q5_query(param_0, param_1, param_2):
 # INPUT: Year
 def generate_q6_query(param_0, param_1, param_2):
     query = """
-        PREFIX exont: <http://example.org/ontology/>
+        PREFIX exont: <http://countrystats.org/ontology/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
 
         SELECT (?countryName AS ?COUNTRY) (count(?athlete) AS ?GOLD_MDALS) (?gdp AS ?Gross_Domestic_Product_USD)
@@ -166,7 +164,7 @@ def generate_q6_query(param_0, param_1, param_2):
 # INPUT: MEDAL TYPE ie. [GOLD,SILVER,BRONZE]
 def generate_q7_query(param_0, param_1, param_2):
     query = """
-        PREFIX exont: <http://example.org/ontology/>
+        PREFIX exont: <http://countrystats.org/ontology/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
 
         SELECT (COUNT(?athlete) AS ?TOTAL_MEDALS) (?athleteSportCountryName AS ?COUNTRY) (?toughSportName AS ?SPORTS_DISCIPLINE)
@@ -190,7 +188,7 @@ def generate_q7_query(param_0, param_1, param_2):
 # No input but graph
 def generate_q8_query(param_0, param_1, param_2):
     query = """
-        PREFIX exont: <http://example.org/ontology/>
+        PREFIX exont: <http://countrystats.org/ontology/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
 
         SELECT  (?universityName AS ?UNIVERSITY_NAME)  (?universityWorldRank AS ?WORLD_RANK) (?researchRating AS ?RESEARCH_RATING) (COUNT(?laureate) AS ?NOBEL_LAUREATE_COUNT) (?countryName AS ?COUNTRY)
@@ -218,7 +216,7 @@ def generate_q8_query(param_0, param_1, param_2):
 # Inputs: MEDAL TYPE, COUNTRY, YEAR
 def generate_q9_query(param_0, param_1, param_2):
     query = """
-        PREFIX exont: <http://example.org/ontology/>
+        PREFIX exont: <http://countrystats.org/ontology/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
 
         SELECT  (COUNT(?athlete) AS ?TOTAL_MEDALS)
@@ -243,7 +241,7 @@ def generate_q9_query(param_0, param_1, param_2):
 # INPUT: Year and Level of difficulty
 def generate_q10_query(param_0, param_1, param_2):
     query = """
-        PREFIX exont: <http://example.org/ontology/>
+        PREFIX exont: <http://countrystats.org/ontology/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
 
         SELECT (COUNT(?athlete) AS ?NUMBER_OF_WINNERS) (?sex AS ?GENDER) (?toughSportName AS ?SPORTS_DISCIPLINE)

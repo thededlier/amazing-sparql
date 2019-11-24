@@ -1,419 +1,419 @@
-<http://www.example.org/ontology/sportsevent/31>
+<http://www.countrystats.org/ontology/sportsevent/31>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Skiing: Nordic" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 30 .
 
-<http://www.example.org/ontology/sportsevent/44>
+<http://www.countrystats.org/ontology/sportsevent/44>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Weight-Lifting" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 44 .
 
-<http://www.example.org/ontology/sportsevent/16>
+<http://www.countrystats.org/ontology/sportsevent/16>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Track and Field: Pole Vault" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 16 .
 
-<http://www.example.org/ontology/sportsevent/57>
+<http://www.countrystats.org/ontology/sportsevent/57>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Bowling" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 57 .
 
-<http://www.example.org/ontology/sportsevent/29>
+<http://www.countrystats.org/ontology/sportsevent/29>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Ski Jumping" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 29 .
 
-<http://www.example.org/ontology/sportsevent/10>
+<http://www.countrystats.org/ontology/sportsevent/10>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Soccer" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 10 .
 
-<http://www.example.org/ontology/sportsevent/51>
+<http://www.countrystats.org/ontology/sportsevent/51>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Golf" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 51 .
 
-<http://www.example.org/ontology/sportsevent/23>
+<http://www.countrystats.org/ontology/sportsevent/23>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Surfing" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 23 .
 
-<http://www.example.org/ontology/sportsevent/36>
+<http://www.countrystats.org/ontology/sportsevent/36>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Swimming (all strokes): Distance" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 36 .
 
-<http://www.example.org/ontology/sportsevent/5>
+<http://www.countrystats.org/ontology/sportsevent/5>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Wrestling" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 5 .
 
-<http://www.example.org/ontology/sportsevent/49>
+<http://www.countrystats.org/ontology/sportsevent/49>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Canoe/Kayak" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 49 .
 
-<http://www.example.org/ontology/sportsevent/30>
+<http://www.countrystats.org/ontology/sportsevent/30>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Badminton" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 30 .
 
-<http://www.example.org/ontology/sportsevent/43>
+<http://www.countrystats.org/ontology/sportsevent/43>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Track and Field: Middle Distance" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 43 .
 
-<http://www.example.org/ontology/sportsevent/15>
+<http://www.countrystats.org/ontology/sportsevent/15>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Rodeo: Steer Wrestling" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 15 .
 
-<http://www.example.org/ontology/sportsevent/56>
+<http://www.countrystats.org/ontology/sportsevent/56>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Curling" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 56 .
 
-<http://www.example.org/ontology/sportsevent/28>
+<http://www.countrystats.org/ontology/sportsevent/28>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Bobsledding/Luge" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 28 .
 
-<http://www.example.org/ontology/sportsevent/50>
+<http://www.countrystats.org/ontology/sportsevent/50>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Horse Racing" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 50 .
 
-<http://www.example.org/ontology/sportsevent/22>
+<http://www.countrystats.org/ontology/sportsevent/22>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Racquetball/Squash" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 22 .
 
-<http://www.example.org/ontology/sportsevent/35>
+<http://www.countrystats.org/ontology/sportsevent/35>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Diving" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 35 .
 
-<http://www.example.org/ontology/sportsevent/4>
+<http://www.countrystats.org/ontology/sportsevent/4>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Basketball" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 4 .
 
-<http://www.example.org/ontology/sportsevent/48>
+<http://www.countrystats.org/ontology/sportsevent/48>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Track and Field: Weights" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 48 .
 
-<http://www.example.org/ontology/sportsevent/42>
+<http://www.countrystats.org/ontology/sportsevent/42>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Rodeo: Bull/Bareback/Bronc Riding" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 42 .
 
-<http://www.example.org/ontology/sportsevent/14>
+<http://www.countrystats.org/ontology/sportsevent/14>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Lacrosse" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 14 .
 
-<http://www.example.org/ontology/sportsevent/55>
+<http://www.countrystats.org/ontology/sportsevent/55>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Archery" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 55 .
 
-<http://www.example.org/ontology/sportsevent/27>
+<http://www.countrystats.org/ontology/sportsevent/27>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Cycling: Sprints" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 27 .
 
-<http://www.example.org/ontology/sportsevent/9>
+<http://www.countrystats.org/ontology/sportsevent/9>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Baseball/Softball" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 9 .
 
-<http://www.example.org/ontology/sportsevent/21>
+<http://www.countrystats.org/ontology/sportsevent/21>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Volleyball" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 20 .
 
-<http://www.example.org/ontology/sportsevent/34>
+<http://www.countrystats.org/ontology/sportsevent/34>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Track and Field: Long, Triple jumps" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 34 .
 
-<http://www.example.org/ontology/sportsevent/3>
+<http://www.countrystats.org/ontology/sportsevent/3>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Football" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 3 .
 
-<http://www.example.org/ontology/sportsevent/47>
+<http://www.countrystats.org/ontology/sportsevent/47>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Table Tennis" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 47 .
 
-<http://www.example.org/ontology/sportsevent/19>
+<http://www.countrystats.org/ontology/sportsevent/19>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Figure Skating" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 19 .
 
-<http://www.example.org/ontology/sportsevent/41>
+<http://www.countrystats.org/ontology/sportsevent/41>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Track and Field: Distance" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 40 .
 
-<http://www.example.org/ontology/sportsevent/13>
+<http://www.countrystats.org/ontology/sportsevent/13>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Rugby" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 13 .
 
-<http://www.example.org/ontology/sportsevent/54>
+<http://www.countrystats.org/ontology/sportsevent/54>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Equestrian" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 54 .
 
-<http://www.example.org/ontology/sportsevent/26>
+<http://www.countrystats.org/ontology/sportsevent/26>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Team Handball" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 26 .
 
-<http://www.example.org/ontology/sportsevent/39>
+<http://www.countrystats.org/ontology/sportsevent/39>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Rowing" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 39 .
 
-<http://www.example.org/ontology/sportsevent/8>
+<http://www.countrystats.org/ontology/sportsevent/8>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Gymnastics" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 8 .
 
-<http://www.example.org/ontology/sportsevent/20>
+<http://www.countrystats.org/ontology/sportsevent/20>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Cycling: Distance" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 20 .
 
-<http://www.example.org/ontology/sportsevent/33>
+<http://www.countrystats.org/ontology/sportsevent/33>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Track and Field: High Jump" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 33 .
 
-<http://www.example.org/ontology/sportsevent/2>
+<http://www.countrystats.org/ontology/sportsevent/2>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Ice Hockey" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 2 .
 
-<http://www.example.org/ontology/sportsevent/46>
+<http://www.countrystats.org/ontology/sportsevent/46>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Water Skiing" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 46 .
 
-<http://www.example.org/ontology/sportsevent/18>
+<http://www.countrystats.org/ontology/sportsevent/18>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Speed Skating" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 17 .
 
-<http://www.example.org/ontology/sportsevent/59>
+<http://www.countrystats.org/ontology/sportsevent/59>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Billiards" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 59 .
 
-<http://www.example.org/ontology/sportsevent/40>
+<http://www.countrystats.org/ontology/sportsevent/40>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Rodeo: Calf Roping" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 40 .
 
-<http://www.example.org/ontology/sportsevent/12>
+<http://www.countrystats.org/ontology/sportsevent/12>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Water Polo" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 11 .
 
-<http://www.example.org/ontology/sportsevent/53>
+<http://www.countrystats.org/ontology/sportsevent/53>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Roller Skating" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 52 .
 
-<http://www.example.org/ontology/sportsevent/25>
+<http://www.countrystats.org/ontology/sportsevent/25>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Skiing: Freestyle" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 25 .
 
-<http://www.example.org/ontology/sportsevent/38>
+<http://www.countrystats.org/ontology/sportsevent/38>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Track and Field: Sprints" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 38 .
 
-<http://www.example.org/ontology/sportsevent/7>
+<http://www.countrystats.org/ontology/sportsevent/7>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Tennis" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 7 .
 
-<http://www.example.org/ontology/sportsevent/60>
+<http://www.countrystats.org/ontology/sportsevent/60>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Fishing" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 60 .
 
-<http://www.example.org/ontology/sportsevent/32>
+<http://www.countrystats.org/ontology/sportsevent/32>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Auto Racing" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 32 .
 
-<http://www.example.org/ontology/sportsevent/1>
+<http://www.countrystats.org/ontology/sportsevent/1>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Boxing" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 1 .
 
-<http://www.example.org/ontology/sportsevent/45>
+<http://www.countrystats.org/ontology/sportsevent/45>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Swimming (all strokes): Sprints" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 45 .
 
-<http://www.example.org/ontology/sportsevent/17>
+<http://www.countrystats.org/ontology/sportsevent/17>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Field Hockey" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 17 .
 
-<http://www.example.org/ontology/sportsevent/58>
+<http://www.countrystats.org/ontology/sportsevent/58>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Shooting" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 58 .
 
-<http://www.example.org/ontology/sportsevent/11>
+<http://www.countrystats.org/ontology/sportsevent/11>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Skiing: Alpine" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 11 .
 
-<http://www.example.org/ontology/sportsevent/52>
+<http://www.countrystats.org/ontology/sportsevent/52>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Cheerleading" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 52 .
 
-<http://www.example.org/ontology/sportsevent/24>
+<http://www.countrystats.org/ontology/sportsevent/24>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Fencing" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 24 .
 
-<http://www.example.org/ontology/sportsevent/37>
+<http://www.countrystats.org/ontology/sportsevent/37>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Skateboarding" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 37 .
 
-<http://www.example.org/ontology/sportsevent/6>
+<http://www.countrystats.org/ontology/sportsevent/6>
         a       <http://dbpedia.org/ontology/SportsEvent> ;
         <http://dbpedia.org/ontology/name>
                 "Martial Arts" ;
-        <http://example.org/ontology/difficultyLevel>
+        <http://countrystats.org/ontology/difficultyLevel>
                 6 .

@@ -25,7 +25,7 @@ def query():
     param_1 = request.args.get('param1')
     param_2 = request.args.get('param2')
     print(question_id)
-    sparql_endpoint = 'http://127.0.0.1:3030/kde/query'
+    sparql_endpoint = 'http://127.0.0.1:3030/kde1/query'
     sparql = SPARQLWrapper(sparql_endpoint)
     query = getattr(sys.modules[__name__], "generate_q%s_query" % question_id)(param_0, param_1, param_2)
     sparql.setQuery(query)
