@@ -27,9 +27,8 @@ def generate_q2_query(param_0, param_1, param_2):
         PREFIX dbo: <http://dbpedia.org/ontology/>
         PREFIX exont: <http://countrystats.org/ontology/>
 
-        select (UCASE(?laureateUniversityName) AS ?UNIVERSITY_NAME) (?universityRank AS ?WORLD_RANKING)
-
-        where
+        SELECT (UCASE(?laureateUniversityName) AS ?UNIVERSITY_NAME) (?universityRank AS ?WORLD_RANKING)
+        WHERE
         {
         	?laureate  foaf:name '%s'.
             ?laureate exont:affiliatedToUniversity ?laureateUniversity.
@@ -74,7 +73,6 @@ def generate_q4_query(param_0, param_1, param_2):
         PREFIX exont: <http://countrystats.org/ontology/>
 
         SELECT (?universityname AS ?UNIVERSITY_NAME) (?numberOfStudents AS ?TOTAL_NO_OF_STUDENTS) (?populationCount AS ?TOTAL_POPULATION)
-
         WHERE {
           	?country dbo:name '%s'.
             ?university exont:situatedIn ?country.
@@ -84,7 +82,6 @@ def generate_q4_query(param_0, param_1, param_2):
             ?universityRankObj exont:definedBy ?universityRankingParams.
             ?universityRankingParams exont:numberOfStudents ?numberOfStudents.
         		{
-
           			SELECT ?populationCount
         					WHERE {
          							?country dbo:name '%s'.
@@ -144,7 +141,6 @@ def generate_q6_query(param_0, param_1, param_2):
             ?athlete  dbo:sportCountry ?athleteSportCountryObj.
             ?athleteSportCountryObj dbo:name ?countryName.
           {
-
           	SELECT ?gdp ?countryName
     			WHERE {
     						?country dbo:name ?countryName.
@@ -168,9 +164,7 @@ def generate_q7_query(param_0, param_1, param_2):
         PREFIX dbo: <http://dbpedia.org/ontology/>
 
         SELECT (COUNT(?athlete) AS ?TOTAL_MEDALS) (?athleteSportCountryName AS ?COUNTRY) (?toughSportName AS ?SPORTS_DISCIPLINE)
-
         WHERE {
-
           ?toughSport exont:difficultyLevel 1.
           ?toughSport dbo:name ?toughSportName.
           ?olympicEvent exont:hasSportDiscipline ?toughSportName.
@@ -192,7 +186,6 @@ def generate_q8_query(param_0, param_1, param_2):
         PREFIX dbo: <http://dbpedia.org/ontology/>
 
         SELECT  (?universityName AS ?UNIVERSITY_NAME)  (?universityWorldRank AS ?WORLD_RANK) (?researchRating AS ?RESEARCH_RATING) (COUNT(?laureate) AS ?NOBEL_LAUREATE_COUNT) (?countryName AS ?COUNTRY)
-
         WHERE {
         	?university exont:hasRank ?universityRankObj.
         	?universityRankObj exont:worldRank ?universityWorldRank.
@@ -245,9 +238,7 @@ def generate_q10_query(param_0, param_1, param_2):
         PREFIX dbo: <http://dbpedia.org/ontology/>
 
         SELECT (COUNT(?athlete) AS ?NUMBER_OF_WINNERS) (?sex AS ?GENDER) (?toughSportName AS ?SPORTS_DISCIPLINE)
-
         WHERE {
-
           ?toughSport exont:difficultyLevel %s.
           ?toughSport dbo:name ?toughSportName.
           ?olympicEvent exont:hasSportDiscipline ?toughSportName.
